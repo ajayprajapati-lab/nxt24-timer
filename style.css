@@ -75,7 +75,7 @@ body::before {
 .header h1 {
     margin: 0;
 
-    font-size: 95px;
+    font-size: clamp(60px, 5vw, 90px);
     font-weight: 900;
 
     letter-spacing: 4px;
@@ -96,13 +96,10 @@ body::before {
 }
 
 #countdown {
-    font-size: 170px;
+    font-size: clamp(140px, 10vw, 190px);
     font-weight: 900;
-
     letter-spacing: 8px;
-
     line-height: 1;
-
     background: linear-gradient(
         90deg,
         #ffffff,
@@ -119,128 +116,11 @@ body::before {
 }
 
 .status {
-    font-size: 30px;
-
+    font-size: 21px;
     letter-spacing: 3px;
-
     margin-top: 15px;
-    margin-bottom: 35px;
-
+    margin-bottom: 15px;
     font-weight: 700;
-}
-
-.progress-container {
-    width: 70%;
-    height: 40px;
-
-    background: rgba(255,255,255,0.08);
-
-    border-radius: 30px;
-
-    overflow: hidden;
-
-    backdrop-filter: blur(10px);
-}
-
-#progress-bar {
-    height: 100%;
-    width: 0%;
-
-    background: linear-gradient(
-        90deg,
-        #00e5ff,
-        #8c52ff
-    );
-
-    box-shadow:
-        0 0 10px #00e5ff,
-        0 0 25px #00e5ff,
-        0 0 40px #8c52ff;
-
-    border-radius: 30px;
-
-    transition: width 1s linear;
-}
-
-.status-row{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:15px;
-    margin-top:18px;
-}
-
-.divider{
-    color:rgba(255,255,255,.3);
-    font-size:24px;
-}
-
-#progress-text, #milestone{
-    font-size:22px;
-    color:#ffffff;
-    letter-spacing:2px;
-
-    margin-top:0;
-}
-
-#event-info {
-    margin-top: 25px;
-
-    font-size: 18px;
-
-    color: rgba(255,255,255,.7);
-
-    letter-spacing: 2px;
-}
-
-.metrics {
-    display: flex;
-
-    justify-content: center;
-
-    gap: 30px;
-
-    margin-top: 30px;
-
-    flex-wrap: wrap;
-}
-
-.metric-card {
-    width: 160px;
-
-    padding: 20px;
-
-    border-radius: 20px;
-
-    background: rgba(255,255,255,0.05);
-
-    border: 1px solid rgba(255,255,255,0.1);
-
-    backdrop-filter: blur(8px);
-}
-
-.metric-card h2{
-    font-size:42px;
-}
-
-.metric-card span {
-    color: #71D6E7;
-
-    font-size: 16px;
-
-    letter-spacing: 1px;
-}
-
-.metric-card h2 {
-    margin: 10px 0 0 0;
-    font-size: 32px;
-}
-
-.journey {
-    margin-top: 35px;
-    color: rgba(255,255,255,.55);
-    font-size: 22px;
-    letter-spacing: 4px;
 }
 
 .phase-ideate {
@@ -253,6 +133,98 @@ body::before {
 
 .phase-impact {
     color: #44E38A !important;
+}
+
+.progress-container {
+    width: 70%;
+    height: 40px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 30px;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+}
+
+#progress-bar {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(
+        90deg,
+        #00e5ff,
+        #8c52ff
+    );
+
+    box-shadow:
+        0 0 10px #00e5ff,
+        0 0 25px #00e5ff,
+        0 0 40px #8c52ff;
+
+    border-radius: 30px;
+    transition: width 1s linear;
+}
+
+.status-row{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:15px;
+    margin-top:15px;
+}
+
+.divider{
+    color:rgba(255,255,255,.3);
+    font-size:24px;
+}
+
+#progress-text, #milestone{
+    font-size:18px;
+    color:#ffffff;
+    letter-spacing:2px;
+
+    margin-top:0;
+}
+
+#event-info {
+    margin-top: 25px;
+    font-size: 18px;
+    color: rgba(255,255,255,.7);
+    letter-spacing: 2px;
+}
+
+.metrics {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.metric-card {
+    width: 110px;
+    padding: 12px;
+    border-radius: 16px;
+
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+
+    backdrop-filter: blur(8px);
+}
+
+.metric-card h2 {
+    margin: 6px 0 0 0;
+    font-size: 22px;
+}
+
+.metric-card span {
+    color: #71D6E7;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+.journey {
+    margin-top: 25px;
+    color: rgba(255,255,255,.55);
+    font-size: 18px;
+    letter-spacing: 3px;
 }
 
 @keyframes countdownPulse {
@@ -294,7 +266,7 @@ body::before {
 }
 
 .logo{
-    width:550px;
+    width: min(350px, 56vw);
     max-width:90%;
     margin-bottom:5px;
 
