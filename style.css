@@ -167,7 +167,7 @@ body::before {
     align-items:center;
     justify-content:center;
     gap:15px;
-    margin-top:15px;
+    margin-top:10px;
 }
 
 .divider{
@@ -179,33 +179,23 @@ body::before {
     font-size:18px;
     color:#ffffff;
     letter-spacing:2px;
-
     margin-top:0;
-}
-
-#event-info {
-    margin-top: 25px;
-    font-size: 18px;
-    color: rgba(255,255,255,.7);
-    letter-spacing: 2px;
 }
 
 .metrics {
     display: flex;
     justify-content: center;
     gap: 15px;
-    margin-top: 15px;
+    margin-top: 10px;
     flex-wrap: wrap;
 }
 
 .metric-card {
     width: 110px;
-    padding: 12px;
+    padding: 10px;
     border-radius: 16px;
-
     background: rgba(255,255,255,0.05);
     border: 1px solid rgba(255,255,255,0.1);
-
     backdrop-filter: blur(8px);
 }
 
@@ -221,7 +211,7 @@ body::before {
 }
 
 .journey {
-    margin-top: 25px;
+    margin-top: 15px;
     color: rgba(255,255,255,.55);
     font-size: 18px;
     letter-spacing: 3px;
@@ -280,5 +270,5 @@ body::before {
     font-size:22px;
     letter-spacing:3px;
     font-weight:700;
-    margin-bottom:15px;
+    margin-bottom:10px;
 }
