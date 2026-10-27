@@ -30,9 +30,6 @@ function updateTimer() {
         document.getElementById("countdown").innerHTML =
             "00:00:00";
 
-        document.getElementById("status").innerHTML =
-            "MISSION COMPLETE";
-
         document.getElementById("milestone").innerHTML =
             "🏆 TIME FOR JUDGING";
 
@@ -76,36 +73,6 @@ function updateTimer() {
 
     document.getElementById("progress-text").innerHTML =
         percentage.toFixed(0) + "% COMPLETE";
-
-    let stage = "";
-
-    const status =
-        document.getElementById("status");
-
-    if (percentage < 33) {
-
-        stage = "IDEATE PHASE";
-
-        status.className =
-            "status phase-ideate";
-
-    } else if (percentage < 66) {
-
-        stage = "INNOVATE PHASE";
-
-        status.className =
-            "status phase-innovate";
-
-    } else {
-
-        stage = "IMPACT PHASE";
-
-        status.className =
-            "status phase-impact";
-
-    }
-
-    status.innerHTML = stage;
 
     let milestone = "IDEATION";
 
