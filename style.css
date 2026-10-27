@@ -55,31 +55,24 @@ body::before {
 
 .container {
     position: relative;
-
     width: 90%;
     height: 100vh;
-
     margin: auto;
-
     display: flex;
     flex-direction: column;
-
     justify-content: center;
     align-items: center;
-
     text-align: center;
-
     z-index: 2;
+    padding: 4vh 0;
+    box-sizing: border-box;
 }
 
 .header h1 {
     margin: 0;
-
     font-size: clamp(60px, 5vw, 90px);
     font-weight: 900;
-
     letter-spacing: 4px;
-
     background: linear-gradient(
         90deg,
         #00e5ff,
